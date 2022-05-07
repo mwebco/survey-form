@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey-Form</title>
+    <link rel="stylesheet" href="layout.css">
 </head>
 <body>
     <form action="/form-handling-url" method="post">
@@ -12,54 +13,57 @@
         <legend>Add User</legend>
 
         <div>
-            <label for="firstName">First Name</label>
+            <label class="name email" for="firstName">First Name</label>
             <input type="text" id="firstName" name="first_name">
         </div>
 
         <div>
-            <label for="lastName">Last Name</label>
+            <label class="name email" for="lastName">Last Name</label>
             <input type="text" id="lastName" name="last_name">
         </div>
 
         <div>
-            <label for="email">Email</label>
+            <label class="name email" for="email">Email</label>
             <input type="email" id="email" name="email_address">
         </div>
 
-        <div>
-            <label for="status">Status</label>
+        <div class="statusDate">
+            <label class="status date" for="status">Status</label>
             <select name="user_status" id="status">
                 <option value="student">Student</option>
                 <option value="teacher">Teacher</option>
                 <option value="guest">Guest</option>
             </select>
         </div>
+
+        <div class="statusDate">
+            <label class="status date" for="currentDate">Date</label>
+            <input type="date" id="currentDate" name="current_date">
+        </div>
+
         <p>Chose your favorite programming language</p>
 
-        <div>
+        <div class="language">
             <label for="html">HTML</label>
             <input type="radio" id="html" name="language" value="html" checked>
         </div>
 
-        <div>
+        <div class="language">
             <label for="css">CSS</label>
             <input type="radio" id="css" name="language" value="css">
         </div>
 
-        <div>
+        <div class="language">
             <label for="javascript">javaScript</label>
             <input type="radio" id="javascript" name="language" value="javascript">
         </div>
 
         <div>
-            <label for="comments">Comments</label>
+            <label class="comments" for="comments">Comments</label>
             <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
         </div>
 
-        <div>
-            <label for="currentDate">Current Date</label>
-            <input type="date" id="currentDate" name="current_date">
-        </div>
+
 
         <div>
             <label for="signup">Sign up for newsletter</label>
